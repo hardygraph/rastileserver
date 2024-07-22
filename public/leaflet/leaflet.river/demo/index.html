@@ -1,0 +1,52 @@
+<!-- <!DOCTYPE html> -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet River demo</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/main.css"/>
+</head>
+<body>
+  <div class="wrap">
+      <div class="left-panel">
+          <div class="header">
+              <h2>Leaflet.River demo</h2>
+          </div>
+          <div class="content">
+              <div class="instruction">
+                  1. Select river
+              </div>
+              <div class="instruction">
+                  2. Set min/max width (px)
+              </div>
+
+              <div class="div-table">
+                 <div class="div-table-row">
+                    <div class="div-table-col width-type min-width" align="center">Min width:</div>
+                    <div  class="div-table-col">
+                        <input class="range-input min-input" type="range" min="1" max="30" step="1" value="1" disabled>
+                        </input>
+                    </div>
+                    <div  class="div-table-col width-value min-value">1</div>
+                 </div>
+                 <div class="div-table-row">
+                    <div class="div-table-col width-type max-width" align="center">Max width:</div>
+                    <div  class="div-table-col">
+                        <input class="range-input max-input" type="range" min="1" max="30" step="1" value="1" disabled>
+                        </input>
+                    </div>
+                    <div  class="div-table-col width-value max-value">1</div>
+                </div>
+              </div>
+
+              <input type="button" class="reset" value="Clear selection"></input>
+          </div>
+      </div>
+
+      <div id="map">
+      </div>
+  </div>
+    <script src="./js/bundle.js"></script>
+</body>
+</html>
